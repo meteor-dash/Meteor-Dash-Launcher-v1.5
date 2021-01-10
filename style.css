@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15pt;
+    overflow: none;
+}
+
+/* Device width: 1770px */
+
+#settings {
+  z-index: 3;
+}
+
+.meta {
+  position: absolute;
+  transition: transform .3s ease-in-out;
+  top: 600px;
+}  
+
+.meteorMeta {
+  position: absolute;
+  transition: transform 2s ease-in-out;
+  top: -500px;
+}
+
+#doc-display {
+  z-index: 2;
+}
+
+.floor {
+  position: absolute;
+  left: 0px;
+  top: 856px;
+  width: 100%;
+  height: 22%;
+  background-color: black;
+}
+
+#ending {
+  z-index: 3;
+  position: absolute;
+  left: 0px;
+  top: -100vh;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  transition: transform .5s ease-in-out;
+  text-align: center;
+  align-content: center;
+}
+
+.menu-screen {
+  z-index: 3;
+  position: absolute;
+  transition: transform .5s ease-in-out;
+  top: 0;
+  left: 0;
+  background-color: #86DEFF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.play {
+  width: 150px;
+  height: 50px;
+  background-color: #76FFBC;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15pt;
+}
+
+.bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#lvls {
+  position: absolute;
+  left: 885px;
+  top: 230px;
+}
+
+#lvl-menu {
+  position: absolute;
+  z-index: 5;
+  top: 100vh;
+  left: 0px;
+  transition: transform .3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background-color: #86DEF3;
+  text-align: center;
+  align-content: center;
+}
+
+.lvl-item {
+  width: 150px;
+  height: 150px;
+  background-color: #76FFBC;
+  font-size: 15pt;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+}

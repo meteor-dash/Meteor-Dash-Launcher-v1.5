@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Meteor Dash</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onkeydown="checkKey(event)">
+  
+  <img src="https://cdnb.artstation.com/p/assets/images/images/021/244/447/large/joshua-groves-pixel-art-volcano-isle.jpg?1570941618" alt="background-GGfjHgd7T" class="bg" width="100%" height="100%" />
+  
+  <h2 id="doc-display">0</h2>
+  <img src="./meta-right.png" alt="meta" class="meta" meta-data="meta.character" id="meta">
+  <div class="floor" id="floor" meta-data="id:4415"></div>
+  
+  
+  <div class="menu-screen" id="menu">
+    <h1>Meteor Dash</h1>
+    <p><b>By: Max Parsons</b></p>
+    <button class="play" id="play" meta-data="btn.play" onclick="startGame(); setLoop(1000); mode('normal')">Play</button>
+    <button class="play" id="play" meta-data="btn.play" onclick="startGame(); setLoop(500); mode('normal')">Hard Mode</button>
+    <button class="play" id="play" meta-data="btn.play" onclick="startGame(); setLoop(150); mode('normal')">Insanity</button>
+    <button class="play" id="arcadeBtn" meta-data="btn.play" onclick="startGame(); arcadeMode(); mode('arcade')">Arcade</button>
+    <!-- <button class="play" id="lvls" meta-data="btn.lvl" onclick="openLevels()">Adventure</button> - Declared UNSTABLE -->
+  </div>
+  
+  <div id="ending" onkeydown="checkEnd(event)">
+    <h1 id="end-display"></h1><br>
+    <span id="g5Fr5">Press "E" to retry (3)</span><br><br>
+    <button class="play" onclick="reloadWindow()">Home</button>
+  </div>
+  
+  <div id="lvl-menu">
+    <!-- <h1><b><span>Meteor Dash: Adventure</span></b></h1>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 1</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 2</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 3</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 4</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 5</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 6</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 7</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 8</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 9</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 10</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 11</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 12</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 13</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 14</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 15</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 16</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 17</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 18</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 19</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 20</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 21</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 22</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 23</button>
+    <button onclick="startGame(); level1()" class="lvl-item">Level 24</button>
+  </div> -->
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+  
+  <!-- jQuery -->
+  <script src="./jquery/jquery.min.js"></script>
+</body>
+</html>
